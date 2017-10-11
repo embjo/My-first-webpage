@@ -17,6 +17,7 @@
         <div><button>Go!</button></div>
       </div>
         <button class= "addOption">Add</button>
+        <button class="addOption">Add</button>
     </div>
     <img src="images/bild.jpg" height="250" width="250" alt="" align="top">
     <form method=post action="mailto:emmabjorkman86@hotmail.com" enctype="text/plain">
@@ -24,4 +25,19 @@
     <input type="submit" value="Skicka!">
     </form>
     <button>Go!</button>
+    <div class="resultSection"></div>
+    <button class= "addGo">Go!</button>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+      $(function(){
+        $('.resultSection').hide()
+
+        var add_option = function(){
+        $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+    </script>
   </body></html>
