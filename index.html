@@ -6,6 +6,7 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <h1 class="rubrik">Help me choose between..</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="something"></input>
@@ -19,6 +20,8 @@
     <script>
       $(function(){
         $('.resultSection').hide()
+
+
 
         var add_option = function(){
         $('.inputs').append('<input></input>')
@@ -39,5 +42,12 @@
         }
         $('.submit').click(submit)
 
+        var background = function(){
+          $('body').css('background-color','yellow')
+          }
+        $('.rubrik').click(background)
+
+
       })
+      </script>
   </body></html>
